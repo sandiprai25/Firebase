@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF; /* Secondary: White */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    color: #333333; /* Primary: Dark Gray */
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo p {
+    color: #555;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333333; /* Primary: Dark Gray */
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6D8D4E; /* Accent: Green */
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: #6D8D4E; /* Accent: Green */
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #6D8D4E; /* Accent: Green */
+    color: #FFFFFF; /* Secondary: White */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #5c7a41; /* Darker shade of accent green */
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link p {
+    color: #555;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #6D8D4E; /* Accent: Green */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* For smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .login-container {
+        padding: 20px;
+    }
+    
+    .logo-img {
+        width: 60px;
+        height: 60px;
+    }
+}
